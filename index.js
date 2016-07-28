@@ -2884,7 +2884,6 @@ function isAddress(address) {
     }
 };
 
-
  // Checks if the given string is a checksummed address
 function isChecksumAddress(address) {
     // Check each case
@@ -2916,7 +2915,6 @@ function lookupByStormPathId(callback) {
     for (var id in btcAmt) {
         if (btcAmt.hasOwnProperty(id)) {
             var accountData = stormpathAccounts[id];
-
             var btc = parseFloat(btcAmt[id]);
             var rep = btc * REPBTC;
 
@@ -2961,6 +2959,7 @@ function lookupByEthAddr(callback) {
             incrementRepBalance(id, eth * ETHBTC * REPBTC);
         }
     }
+    callback();
 }
 
 function calculateRepBalances(callback) {
@@ -2970,7 +2969,6 @@ function calculateRepBalances(callback) {
             return callback();
         });
     });
-    return callback();
 }
 
 function generateArrays(){
