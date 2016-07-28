@@ -1,4 +1,4 @@
-var fs = require('graceful-fs')
+var fs = require('graceful-fs');
 var async = require("async");
 var sha3 = require('crypto-js/sha3');
 
