@@ -1,0 +1,6 @@
+data
+.stormpath
+*~
+node_modules
+report.txt
+arrays.py

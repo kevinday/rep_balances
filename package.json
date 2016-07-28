@@ -1,0 +1,26 @@
+{
+  "name": "rep-dist",
+  "version": "1.0.0",
+  "description": "rep distribution parser",
+  "main": "index.js",
+  "engines": {
+    "node": "4.1.2",
+    "npm": "2.14.4"
+  },
+  "author": "Kevin Day (@k_day)",
+  "license": "ISC",
+  "dependencies": {
+    "async": "1.4.2",
+    "graceful-fs": "4.1.5",
+    "crypto-js": "3.1.6"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kevinrday/rep-dist.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kevinrday/rep-dist/issues"
+  },
+  "homepage": "https://github.com/kevinrday/rep-dist"
+}
