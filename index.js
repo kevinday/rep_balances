@@ -3023,7 +3023,8 @@ function generateArrays(){
     for (var addr in ethRepBalances) {
         if (first){
             arrays.write(ethRepBalances[addr].toString());
-            first = false;    
+            first = false;
+            continue;  
         }
         arrays.write(", " + ethRepBalances[addr].toString());
     };
