@@ -2939,6 +2939,7 @@ function normalizeEthAddr(addr) {
 }
 
 function incrementRepBalance(addr, amt) {
+    addr = normalizeEthAddr(addr);
     if (!ethRepBalances[addr]) ethRepBalances[addr] = 0.0;
     ethRepBalances[addr] = ethRepBalances[addr] + amt;
 }
