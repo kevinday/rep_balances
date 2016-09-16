@@ -2934,6 +2934,7 @@ function isChecksumAddress(address) {
 function normalizeEthAddr(addr) {
     addr = addr.replace(/["{}]/g,"");
     addr = addr.trim();
+    addr = addr.toLowerCase();
     return addr;
 }
 
