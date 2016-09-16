@@ -3011,7 +3011,8 @@ function generateArrays(){
     for (var addr in ethRepBalances) {
         if (first){
             arrays.write('"' + addr + '"');
-            first = false;    
+            first = false;
+            continue;  
         }
         arrays.write(', "' + addr + '"');
     };
